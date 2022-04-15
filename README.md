@@ -14,7 +14,7 @@ Simple algorithm to detect the object of road environment using 3D LiDAR <br/>
 ## Summary
 
 * Subscribe `sensor_msgs/PointCloud2` msg
-* Curb Detection from the point cloud
+* Object Detection from the point cloud
 * Publish bounding box(`visualization_msgs/MarkerArray`)
 
 ![](/lidar-object.gif)
@@ -27,6 +27,7 @@ Clone, build and run
 
 ~~~bash
 $ git clone https://github.com/bigbigpark/LiDAR-OBJECT-DETECTION.git
+$ git clone https://github.com/bigbigpark/lidar_msgs.git
 ~~~
 
 ~~~bash
