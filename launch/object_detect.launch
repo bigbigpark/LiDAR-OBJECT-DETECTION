@@ -1,0 +1,9 @@
+<launch>
+    <node name="object_detection" pkg="lidar_object_detection" type="object_detection" output="screen" respawn="true">
+        <remap from="/input" to="/os_cloud_node/points"/>
+    </node>
+
+    <arg name="rviz_config" default="$(find lidar_object_detection)/object.rviz"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rviz_config)" required="true" />
+  
+</launch>
